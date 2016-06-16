@@ -1,19 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app>
 <head>
-  <meta charset="utf-8">
-  <title>Projetos Executados - 2015</title>
+  <meta charset="UTF-8">
+  <title>Observatório FAPEPI</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="scss/app.min.css">
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
   <script src="http://code.highcharts.com/maps/highmaps.js"></script>
   <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-  <script src="js/mapa2.js"></script>
+  <script src="js/mapa.js"></script>
 
 </head>
 <body>
-  <div id="container" style="width:100%; height:600px;"></div>
+  <header class="cover">
+    <h2>Observatório FAPEPI</h2>
+    <select class="year" name="">
+      <option value="year">2016</option>
+      <option value="year">2015</option>
+    </select>
+  </header>
+  <section class="title">
+    <h3>FAPEPI 2016</h3><!-- Muda de acordo com o ano selecionado no header-->
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pre-page">
+          <h4>Titulo</h4>
+          <div class="number">
+            <h5>Quantidade</h5>
+          </div>
+          <div class="value">
+            <h5>Valor</h5>
+          </div>
+          <a class="btn btn-primary" href="#">Mais</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pre-page">
+          <h4>Titulo</h4>
+          <div class="number">
+            <h5>Quantidade</h5>
+          </div>
+          <div class="value">
+            <h5>Valor</h5>
+          </div>
+          <a class="btn btn-primary" href="#">Mais</a>
+        </div>
+        <!--<div id="container" style="width:100%; height:600px;"></div>-->
+      </div>
+      <div class="col-md-4">
+        <div class="pre-page">
+          <h4>Titulo</h4>
+          <div class="number">
+            <h5>Quantidade</h5>
+          </div>
+          <div class="value">
+            <h5>Valor</h5>
+          </div>
+          <a class="btn btn-primary" href="#">Mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
