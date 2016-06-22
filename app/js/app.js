@@ -27,8 +27,8 @@ observatoryApp.controller('AppController', function AppController($scope){
         {
           name: "UESPI",
           city: "Teresina",
-          number: 15,
-          value: 70000
+          number: 30,
+          value: 170000
 
         }, {
           name: "UFPI",
@@ -46,8 +46,20 @@ observatoryApp.controller('AppController', function AppController($scope){
     }, {
       id: "2011"
     }
-  ];
-  $scope.numTotal = $scope.years[0].scholarship[0].number + $scope.years[0].scholarship[1].number;
-  $scope.valTotal = $scope.years[0].scholarship[0].value + $scope.years[0].scholarship[1].value;
-
+  ];  
+  $scope.data = $scope.years[0];
+  $scope.calculateTotal = function(data){
+    var total = 0;
+    for(var i =0 ; i< data.length; i++){
+      total+= data[i].number;
+    }
+    return total;
+  };
+  $scope.calculateValue = function(data){
+    var total = 0;
+    for(var i =0 ; i< data.length; i++){
+      total+= data[i].value;
+    }
+    return total;
+  };
 });

@@ -16,13 +16,15 @@
 <body ng-controller="AppController">
   <header class="cover">
     <h2>Observatório FAPEPI</h2>
-    <select class="year">
-      <option value="year" ng-repeat="year in years">{{year.id}}</option>
+    <select class="year"
+      ng-options="year.id for year in years track by year.id"
+      ng-model="data">
+      <!--<option value="{{year.id}}" ng-repeat="year in years">{{year.id}}</option>-->
       <!--<option value="year">2015</option>-->
     </select>
   </header>
   <section class="title">
-    <h3>FAPEPI 2016</h3><!-- Muda de acordo com o ano selecionado no header-->
+    <h3>FAPEPI {{data.id}}</h3><!-- Muda de acordo com o ano selecionado no header-->
   </section>
   <section class="container">
     <div class="row">
@@ -30,10 +32,10 @@
         <div class="pre-page">
           <h4>Bolsistas</h4>
           <div class="number">
-            <h5>Quantidade:<span>{{numTotal}}</span></h5>
+            <h5>Quantidade:{{calculateTotal(data.scholarship)}}</h5>
           </div>
           <div class="value">
-            <h5>Valor: <span>{{valTotal|currency:"R$"}}</span></h5>
+            <h5>Valor: <span>{{calculateValue(data.scholarship)|currency:"R$"}}</span></h5>
           </div>
           <a class="btn btn-primary" href="#">Mais</a>
         </div>
