@@ -2,10 +2,17 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
-
+$primary-blue: #2980b9;
 body{
   background-color: #fff;
   font-family: 'Lato', sans-serif;
+}
+
+h3, h4{
+  color: $primary-blue;
+}
+h3{
+  margin-left: 20px;
 }
 .cover {
   width: 100%;
@@ -18,28 +25,44 @@ body{
     text-align: center;
     color: #ecf0f1;
   }
+  select{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 57px;
+    background-color: rgba(41, 128, 185,1.0);//#ecf0f1;
+    color: #ddd;
+    text-align: center;
+    border-radius: 0;
+  }
 
-  .year {
+  /*.year {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 50%;
     left: 50%;
-  }
+    width: 200px;
+    background-color: #ecf0f1;
+  }*/
 }
 
 .pre-page {
   position: relative;
   background-color: #ecf0f1;
-  border-radius: 10px;
-  height: 200px;
+  /*border-radius: 10px;*/
+  height: 150px;
   margin-top: 50px;
+  box-shadow: 2px 2px #ddd;
+  border-left: 4px solid #2980b9;
+  text-align: center;
+
 
   a{
     position: absolute;
     bottom: 0;
     right: 0;
   }
-}
-h4{
-  text-align: center;
+
+  h4{
+    padding-top: 10px;
+  }
 }
