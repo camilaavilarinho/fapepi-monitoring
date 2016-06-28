@@ -1,14 +1,18 @@
-/*@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);*/
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
 $primary-blue: #2980b9;
+$secondary: #e74c3c;
+$background: #ecf0f1;
+$font-color: #2c3e50;
+
 body{
   background-color: #fff;
   font-family: 'Lato', sans-serif;
 }
 
-h3, h4{
+h3,
+h4{
   color: $primary-blue;
 }
 h3{
@@ -19,50 +23,60 @@ h3{
   height: 150px;
   position: relative; /* Para alinhar o year no centro*/
   border: 2px solid #ddd;/*Para delimitar enquanto não tem o banner*/
-  background-color: #2980b9;
+  background-color: $primary-blue;
 
   h2{
     text-align: center;
-    color: #ecf0f1;
+    color: $background;
   }
-  select{
+  .year{
     width: 150px;
     margin: 0 auto;
     margin-top: 57px;
-    background-color: rgba(41, 128, 185,1.0);//#ecf0f1;
-    color: #ddd;
+    background-color: $primary-blue;//#ecf0f1;
+    color: $background;
     text-align: center;
     border-radius: 0;
-  }
 
-  /*.year {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    left: 50%;
-    width: 200px;
-    background-color: #ecf0f1;
-  }*/
+    option{
+      background-color: $background;
+      color: $font-color;
+    }
+  }
 }
 
 .pre-page {
   position: relative;
-  background-color: #ecf0f1;
+  background-color: $background;
   /*border-radius: 10px;*/
   height: 150px;
   margin-top: 50px;
   box-shadow: 2px 2px #ddd;
-  border-left: 4px solid #2980b9;
-  text-align: center;
+  border-left: 4px solid $primary-blue;
+
 
 
   a{
     position: absolute;
     bottom: 0;
     right: 0;
+    color: $secondary;
   }
 
   h4{
+    text-align: center;
     padding-top: 10px;
+  }
+
+  h5{
+    color: $font-color;
+    padding-left: 10px;
+    padding-top: 10px;
+    span{
+      color: $primary-blue;
+      font-size: 17px;
+      font-weight: bold;
+      padding-left: 5px;
+    }
   }
 }

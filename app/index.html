@@ -21,8 +21,6 @@
     <select class="year form-control"
       ng-options="year.id for year in years"
       ng-model="data">
-      <!--<option value="{{year.id}}" ng-repeat="year in years">{{year.id}}</option>-->
-      <!--<option value="year">2015</option>-->
     </select>
   </header>
   <section class="title">
@@ -34,7 +32,7 @@
         <div class="pre-page">
           <h4>Bolsas de pós graduação</h4>
           <div class="number">
-            <h5>Quantidade:{{calculateTotal(data.scholarship)}}</h5>
+            <h5>Quantidade:<span>{{calculateTotal(data.scholarship)}}</span></h5>
           </div>
           <div class="value">
             <h5>Valor: <span>{{calculateValue(data.scholarship)|currency:"R$"}}</span></h5>
@@ -46,10 +44,10 @@
         <div class="pre-page">
           <h4>Auxílio a pesquisas</h4>
           <div class="number">
-            <h5>Quantidade: {{calculateTotal(data.research)}}</h5>
+            <h5>Quantidade:<span>{{calculateTotal(data.research)}}</span></h5>
           </div>
           <div class="value">
-            <h5>Valor: {{calculateValue(data.research)|currency:"R$"}}</h5>
+            <h5>Valor: <span>{{calculateValue(data.research)|currency:"R$"}}</span></h5>
           </div>
           <a class="" href="#"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></a>
         </div>
@@ -59,10 +57,10 @@
         <div class="pre-page">
           <h4>Auxílio a eventos</h4>
           <div class="number">
-            <h5>Quantidade: {{calculateTotal(data.events)}}</h5>
+            <h5>Quantidade: <span>{{calculateTotal(data.events)}}</span></h5>
           </div>
           <div class="value">
-            <h5>Valor: {{calculateValue(data.research)|currency:"R$"}}</h5>
+            <h5>Valor: <span>{{calculateValue(data.research)|currency:"R$"}}</span></h5>
           </div>
           <a class="" href="#"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></a>
         </div>
@@ -71,13 +69,13 @@
         <div class="pre-page">
           <h4>Instituições</h4>
           <div class="institution-values">
-            <h5>UESPI: {{calculateSchool(data.scholarship)|currency:"R$"}}</h5>
+            <h5>UESPI: <span>{{calculateSchool(data.scholarship)|currency:"R$"}}</span></h5>
           </div>
           <div class="instituition-values">
-            <h5>UFPI: {{calculateSchool(data.scholarship)|currency:"R$"}}</h5>
+            <h5>UFPI: <span>{{calculateSchool(data.scholarship)|currency:"R$"}}</span></h5>
           </div>
           <div class="instituition-values">
-            <h5>IFPI: {{calculateSchool(data.scholarship)|currency:"R$"}}</h5>
+            <h5>IFPI: <span>{{calculateSchool(data.scholarship)|currency:"R$"}}</span></h5>
           </div>
           <a class="" href="#"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></a>
         </div>
