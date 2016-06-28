@@ -6,6 +6,7 @@
   <title>Observatório FAPEPI</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="scss/app.min.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon" />
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="http://code.highcharts.com/maps/highmaps.js"></script>
@@ -17,14 +18,19 @@
 </head>
 <body ng-controller="AppController">
   <header class="cover">
-    <h2>Observatório FAPEPI</h2>
-    <select class="year form-control"
+    <!--<h2>Observatório FAPEPI</h2>-->
+    <!--<select class="year form-control"
       ng-options="year.id for year in years"
       ng-model="data">
-    </select>
+    </select>-->
   </header>
   <section class="title">
-    <h3>FAPEPI {{data.id}}</h3><!-- Muda de acordo com o ano selecionado no header-->
+    <h3>FAPEPI
+      <select class="year form-control"
+        ng-options="year.id for year in years"
+        ng-model="data">
+      </select>
+    </h3><!-- Muda de acordo com o ano selecionado no header-->
   </section>
   <section class="container">
     <div class="row">
