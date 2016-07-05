@@ -4,26 +4,27 @@
 var observatoryApp = angular.module('observatoryApp', []);
 
 observatoryApp.controller('AppController', function AppController($scope, $http){
-  $scope.years = [];
+  var self = $scope;
+  self.years = [];
   $http.get('json/years.json').then(function(response){
-    $scope.years = response.data;
-    $scope.data = $scope.years[0];
+    self.years = response.data;
+    self.data = self.years[0];
   });
-  $scope.calculateTotal = function(data){
+  self.calculateTotal = function(data){
     var total = 0;
     for(var i = 0 ; i < data.length; i++){
       total+= data[i].number;
     }
     return total;
   };
-  $scope.calculateValue = function(data){
+  self.calculateValue = function(data){
     var total = 0;
     for(var i = 0 ; i < data.length; i++){
       total+= data[i].value;
     }
     return total;
   };
-  $scope.calculateSchool = function(data){
+  self.calculateSchool = function(data){
     var total = 0;
     for(var i = 0 ; i < data.length; i++){
       if(data[i].name == "UESPI"){
