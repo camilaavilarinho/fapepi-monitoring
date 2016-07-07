@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="scss/app.min.css">
   <link rel="icon" href="img/logo.png" type="image/x-icon" />
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="http://code.highcharts.com/maps/highmaps.js"></script>
-  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <!--<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>-->
   <script src="https://use.fontawesome.com/e0f5b08d2d.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/app.js"></script>
+  <!--<script src="js/app.js"></script>-->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="short-page/short-page.module.js"></script>
+  <script src="short-page/short-page.component.js"></script>
+  <script src="test-component.js"></script>
 
 </head>
-<body ng-controller="AppController">
+<body>
   <header class="cover">
     <!--<h2>Observatório FAPEPI</h2>-->
     <!--<select class="year form-control"
@@ -24,13 +29,14 @@
       ng-model="data">
     </select>-->
   </header>
-  <section class="title">
+  <div ng-view></div>
+  <!--<section class="title">
     <h3>FAPEPI
       <select class="year form-control"
         ng-options="year.id for year in years"
         ng-model="data">
       </select>
-    </h3><!-- Muda de acordo com o ano selecionado no header-->
+    </h3>
   </section>
   <section class="container">
     <div class="row">
@@ -57,7 +63,6 @@
           </div>
           <a class="" href="#"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></a>
         </div>
-        <!--<div id="container" style="width:100%; height:600px;"></div>-->
       </div>
       <div class="col-md-3">
         <div class="pre-page">
@@ -87,7 +92,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
   <footer></footer>
 </body>
 </html>

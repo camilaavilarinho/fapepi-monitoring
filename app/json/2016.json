@@ -1,0 +1,74 @@
+{
+  "id": "2016",
+  "scholarship": [
+    {
+      "name": "UESPI",
+      "city": "Campo Maior",
+      "number": 1,
+      "value": 1500,
+      "type": "mestrado"
+    }, {
+      "name": "UESPI",
+      "city": "Teresina",
+      "number": 1,
+      "value": 2200,
+      "type": "doutorado"
+    }, {
+      "name": "UESPI",
+      "city": "Piripiri",
+      "number": 1,
+      "value": 2200,
+      "type": "doutorado"
+    }, {
+      "name": "UESPI",
+      "city": "Floriano",
+      "number": 2,
+      "value": 4400,
+      "type": "doutorado"
+    }, {
+      "name": "UESPI",
+      "city": "Parnaiba",
+      "number": 3,
+      "value": 6600,
+      "type": "doutorado"
+    }, {
+      "name": "UESPI",
+      "city": "Picos",
+      "number": 1,
+      "value": 2200,
+      "type": "doutorado"
+    }, {
+      "name": "UFPI",
+      "city": "Picos",
+      "number": 1,
+      "value": 2200,
+      "type": "doutorado"
+    }
+  ],
+  "research": [
+    {
+      "school": "UFPI",
+      "city": "Teresina",
+      "number": 40,
+      "value": 90000
+    }, {
+      "school": "UESPI",
+      "city": "Teresina",
+      "number": 40,
+      "value": 90000
+    }
+  ],
+  "events": [
+    {
+      "school": "UFPI",
+      "city": "Teresina",
+      "number": 10,
+      "value": 30000
+    }, {
+      "school": "UESPI",
+      "city": "Teresina",
+      "number": 5,
+      "value": 15000
+    }
+  ]
+}
