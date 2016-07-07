@@ -10,8 +10,8 @@ angular.
         when('/home', {
           template: '<short-page></short-page>'
         }).
-        when('/test', {
-          template: '<test-component></test-component>'
+        when('/:dataId', {
+          template: '<detail-page></detail-page>'
         }).
         otherwise('/home');
     }
