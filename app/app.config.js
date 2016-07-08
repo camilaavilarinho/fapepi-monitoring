@@ -19,6 +19,9 @@ angular.
         when('/:dataId/eventos', {
           template: '<page-events></page-events>'
         }).
+        when('/:dataId/instituicoes', {
+          template: '<page-instituition></page-instituition>'
+        }).
         otherwise('/home');
     }
   ]);

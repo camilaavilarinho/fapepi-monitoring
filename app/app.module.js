@@ -3,7 +3,8 @@
 angular.module('observatoryApp', [
   'ngRoute',
   'pageScholarship',
-  'pageResearch', 
+  'pageInstituition',
+  'pageResearch',
   'pageEvents',
   'shortPage',
 ]);
