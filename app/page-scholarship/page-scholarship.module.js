@@ -1,6 +1,6 @@
 'use strict';
 
 // Define the `phoneDetail` module
-angular.module('detailPage', [
+angular.module('pageScholarship', [
   'ngRoute'
 ]);
