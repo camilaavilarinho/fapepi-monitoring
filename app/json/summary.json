@@ -1,0 +1,209 @@
+[
+  {
+    "id": "2016",
+    "scholarship": [
+      {
+        "name": "UESPI",
+        "value": 1500
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }
+    ],
+    "research": [
+      {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }
+    ],
+    "events": [
+      {
+        "name": "UESPI",
+        "value": 2200
+      }, {
+        "name": "UESPI",
+        "value": 2200
+      }
+    ]
+  }, {
+    "id": "2015",
+    "scholarship": [
+      {
+        "name": "Bolsa de iniciação científica e apoio técnico",
+        "value": 44640.00
+
+      }, {
+        "name": "Concessão de bolsas de mestrado, doutorado e auxilio mobilidade",
+        "value": 1886700.00
+      }
+    ],
+    "research": [
+      {
+        "name": "Pesquisa para o SUS",
+        "value": 1395.77
+      }, {
+        "name": "Instalação de infraestrutura para jovens pesquisadores no Piauí",
+        "value": 114655.86
+      }, {
+        "name": "Fomento à pesquisa científica e tecnológica",
+        "value": 136134.00
+      }, {
+        "name": "Programa de desenvolvimento científico regional",
+        "value":  80000.00
+      }
+    ],
+    "events": [
+      {
+        "name": "Auxilio financeiro a eventos e publicação",
+        "value": 299307.75
+      }
+    ]
+  }, {
+    "id": "2014",
+    "scholarship": [
+      {
+        "name": "Bolsa de iniciação científica e apoio técnico",
+        "value": 265723.44
+
+      }, {
+        "name": "Concessão de bolsas de mestrado, doutorado e auxilio mobilidade",
+        "value": 1277400.00
+      }
+    ],
+    "research": [
+      {
+        "name": "Pesquisa para o SUS",
+        "value": 484762.94
+      }, {
+        "name": "Programa de desenvolvimento científico regional ",
+        "value": 55000.00
+      }
+    ],
+    "events": [
+      {
+        "name": "Auxilio financeiro a eventos e publicação científica",
+        "value": 189357.00
+      }
+    ]
+  }, {
+    "id": "2013",
+    "scholarship": [
+      {
+        "name": "Bolsa de iniciação científica e apoio técnico",
+        "value": 195000.00
+
+      }, {
+        "name": "Concessão de bolsas de mestrado e doutorado",
+        "value": 1396955.00
+      }
+    ],
+    "research": [
+      {
+        "name": "Pesquisa para o SUS",
+        "value": 550440.00
+      }, {
+        "name": "Instalação de infraestrutura para jovens pesquisadores do Piauí",
+        "value": 19251.35
+      }, {
+        "name": "Fomento à pesquisa científica e tecnológica",
+        "value": 2026067.81
+      }, {
+        "name": "Programa de Desenvolvimento Científico e Regional",
+        "value": 10000.00
+      }
+    ],
+    "events": [
+      {
+        "name": "Auxílio financeiro a Eventos",
+        "value": 139053.59
+      }
+    ]
+  }, {
+    "id": "2012",
+    "scholarship": [
+      {
+        "name": "Bolsa de iniciação cientifica e apoio técnico",
+        "value": 129450.00
+
+      }, {
+        "name": "Concessão de bolsas de mestrado e doutorado",
+        "value": 590300.00
+      }
+    ],
+    "research": [
+      {
+        "name": "Pesquisa para o SUS",
+        "value": 29921.39
+      }, {
+        "name": "Instalação de infraestrutura para jovens Pesquisadores no Piauí",
+        "value": 671836.18
+      }, {
+        "name": "Fomento à Pesquisa Científica e Tecnológica",
+        "value": 351688.82
+      }, {
+        "name": "Programa de desenvolvimento científico regional",
+        "value": 20000.00
+      }, {
+        "name": "Programa de apoio a núcleo de excelência",
+        "value": 728000.00
+      }
+    ],
+    "events": [
+      {
+        "name": "Auxilio financeiro a eventos",
+        "value": 141500.00
+      }
+    ]
+  }, {
+    "id": "2011",
+    "scholarship": [
+      {
+        "name": "Apoio a inicialização cientifica Junior ",
+        "value": 128833.64
+
+      }, {
+        "name": "Concessão de Bolsas",
+        "value": 36000.00
+      }, {
+        "name": "Concessão de bolsas de mestrado e Doutorado",
+        "value": 545400.00
+      }
+    ],
+    "research": [
+      {
+        "name": "Pesquisa para o SUS",
+        "value": 12196.46
+      }, {
+        "name": "Fomento a pesquisa Cientifica e tecnológica",
+        "value": 814957.89
+      }, {
+        "name": "Programa de desenvolvimento cientifico regional",
+        "value": 15000.00
+      }
+    ],
+    "events": [
+      {
+        "name": "Auxilio financeiro a Eventos",
+        "value": 19750.00
+      }
+    ]
+  }
+]

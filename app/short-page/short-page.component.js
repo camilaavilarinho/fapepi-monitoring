@@ -7,7 +7,7 @@ angular.
     controller: ['$http', '$scope', function ShortPageController($http, $scope) {
       var self = $scope;
       self.years = [];
-      $http.get('json/years.json').then(function(response){
+      $http.get('json/summary.json').then(function(response){
         self.years = response.data;
         self.data = self.years[0];
       });

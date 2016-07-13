@@ -85,14 +85,56 @@ h3{
   }
 }
 
+.title-sch{
+  text-align: center;
+  color: $primary-blue;
+}
+
+.data-sch{
+  height: 50px;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: $background;
+  box-shadow: 2px 2px #ddd;
+  border-left: 4px solid $primary-blue;
+
+  h4{
+    padding: 15px;
+    color: $font-color;
+    span{
+      font-weight: bold;
+      //color: $primary-blue;
+    }
+  }
+
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  span{
+    font-size: 12px;
+    color: $secondary;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .cover{
     background-image: url("../img/tumb768.png");
+  }
+  .data-sch{
+    height: 100px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .cover{
     background-image: url("../img/tumb480.png");
+  }
+  .data-sch{
+    height: 100px;
   }
 }

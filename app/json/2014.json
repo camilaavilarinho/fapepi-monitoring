@@ -1,0 +1,28 @@
+{
+  "id": "2014",
+  "scholarship": [
+    {
+      "name": "Bolsa de iniciação científica e apoio técnico",
+      "value": 265723.44
+
+    }, {
+      "name": "Concessão de bolsas de mestrado, doutorado e auxilio mobilidade",
+      "value": 1277400.00
+    }
+  ],
+  "research": [
+    {
+      "name": "Pesquisa para o SUS",
+      "value": 484762.94
+    }, {
+      "name": "Programa de desenvolvimento científico regional ",
+      "value": 55000.00
+    }
+  ],
+  "events": [
+    {
+      "name": "Auxilio financeiro a eventos e publicação científica",
+      "value": 189357.00
+    }
+  ]
+}

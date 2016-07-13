@@ -1,0 +1,34 @@
+{
+  "id": "2011",
+  "scholarship": [
+    {
+      "name": "Apoio a inicialização cientifica Junior ",
+      "value": 128833.64
+
+    }, {
+      "name": "Concessão de Bolsas",
+      "value": 36000.00
+    }, {
+      "name": "Concessão de bolsas de mestrado e Doutorado",
+      "value": 545400.00
+    }
+  ],
+  "research": [
+    {
+      "name": "Pesquisa para o SUS",
+      "value": 12196.46
+    }, {
+      "name": "Fomento a pesquisa Cientifica e tecnológica",
+      "value": 814957.89
+    }, {
+      "name": "Programa de desenvolvimento cientifico regional",
+      "value": 15000.00
+    }
+  ],
+  "events": [
+    {
+      "name": "Auxilio financeiro a Eventos",
+      "value": 19750.00
+    }
+  ]
+}

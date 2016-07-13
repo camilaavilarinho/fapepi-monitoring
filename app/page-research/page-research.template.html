@@ -1,2 +1,12 @@
-<h1>Pesquisas</h1>
-<p>{{year.name}}</p>
+<section class="title-sch">
+  <h1>Pesquisas {{year.id}}</h1>
+</section>
+<h2>{{year.research.name}}</h2>
+<section class="content-sch">
+  <div ng-repeat="data in year.research" class="data-sch">
+    <h4>{{data.name}}: <span>{{data.value |currency:"R$"}}</span></h4>
+  </div>
+</section>
+<footer>
+  <span>Fonte: Relatório de gestão {{year.id}}</span>
+</footer>

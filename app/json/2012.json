@@ -1,0 +1,37 @@
+{
+  "id": "2012",
+  "scholarship": [
+    {
+      "name": "Bolsa de iniciação cientifica e apoio técnico",
+      "value": 129450.00
+
+    }, {
+      "name": "Concessão de bolsas de mestrado e doutorado",
+      "value": 590300.00
+    }
+  ],
+  "research": [
+    {
+      "name": "Pesquisa para o SUS",
+      "value": 29921.39
+    }, {
+      "name": "Instalação de infraestrutura para jovens Pesquisadores no Piauí",
+      "value": 671836.18
+    }, {
+      "name": "Fomento à Pesquisa Científica e Tecnológica",
+      "value": 351688.82
+    }, {
+      "name": "Programa de desenvolvimento científico regional",
+      "value": 20000.00
+    }, {
+      "name": "Programa de apoio a núcleo de excelência",
+      "value": 728000.00
+    }
+  ],
+  "events": [
+    {
+      "name": "Auxilio financeiro a eventos",
+      "value": 141500.00
+    }
+  ]
+}

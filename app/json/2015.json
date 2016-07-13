@@ -1,44 +1,34 @@
 {
   "id": "2015",
-  "name":"Dois mil e quize",
   "scholarship": [
     {
-      "name": "UESPI",
-      "city": "Teresina",
-      "number": 30,
-      "value": 170000
+      "name": "Bolsa de iniciação científica e apoio técnico",
+      "value": 44640.00
 
     }, {
-      "name": "UFPI",
-      "city": "Teresina",
-      "number": 20,
-      "value": 100000
+      "name": "Concessão de bolsas de mestrado, doutorado e auxilio mobilidade",
+      "value": 1886700.00
     }
   ],
   "research": [
     {
-      "school": "UFPI",
-      "city": "Teresina",
-      "number": 50,
-      "value": 90000
+      "name": "Pesquisa para o SUS",
+      "value": 1395.77
     }, {
-      "school": "UESPI",
-      "city": "Teresina",
-      "number": 20,
-      "value": 40000
+      "name": "Instalação de infraestrutura para jovens pesquisadores no Piauí",
+      "value": 114655.86
+    }, {
+      "name": "Fomento à pesquisa científica e tecnológica",
+      "value": 136134.00
+    }, {
+      "name": "Programa de desenvolvimento científico regional",
+      "value":  80000.00
     }
   ],
   "events": [
     {
-      "school": "UFPI",
-      "city": "Teresina",
-      "number": 20,
-      "value": 60000
-    }, {
-      "school": "UESPI",
-      "city": "Teresina",
-      "number": 10,
-      "value": 40000
+      "name": "Auxilio financeiro a eventos e publicação",
+      "value": 299307.75
     }
   ]
 }
