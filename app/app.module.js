@@ -2,6 +2,7 @@
 
 angular.module('observatoryApp', [
   'ngRoute',
+  'pageMap',
   'pageScholarship',
   'pageInstituition',
   'pageResearch',

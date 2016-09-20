@@ -1,13 +1,11 @@
-<a href="#!/home"><i class="back fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
-<section class="title-sch">
-  <h1>Pesquisas {{year.id}}</h1>
+<section class="title">
+  <h3>FAPEPI
+    <select class="year form-control"
+      ng-options="year.id for year in years"
+      ng-model="data">
+    </select>
+  </h3><!-- Muda de acordo com o ano selecionado no header-->
 </section>
-<h2>{{year.research.name}}</h2>
-<section class="content-sch">
-  <div ng-repeat="data in year.research" class="data-sch">
-    <h4>{{data.name}}: <span>{{data.value |currency:"R$"}}</span></h4>
-  </div>
+<section class="container-map">
+  <div id="container" style="width:100%; height:600px;"></div>
 </section>
-<footer>
-  <span>Fonte: Relatório de gestão {{year.id}}</span>
-</footer>

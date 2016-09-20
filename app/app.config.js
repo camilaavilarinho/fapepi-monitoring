@@ -8,7 +8,7 @@ angular.
 
       $routeProvider.
         when('/home', {
-          template: '<short-page></short-page>'
+          template: '<page-map></page-map>'//'<short-page></short-page>'
         }).
         when('/:dataId/bolsas', {
           template: '<page-scholarship></page-scholarship>'

@@ -6,11 +6,11 @@ angular.
   component('pageMap', {
     templateUrl: 'page-map/page-map.template.html',
     controller: ['$http', '$scope', '$routeParams',
-      function PageScholarshipController($http, $scope, $routeParams) {
+      function PageMapController($http, $scope, $routeParams) {
         var self = $scope;
 
-        $http.get('json/' + $routeParams.dataId + '.json').then(function(response) {
-          self.year = response.data;
+        $http.get('json/summary.json').then(function(response) {
+          self.years = response.data;
         });
       }
     ]
