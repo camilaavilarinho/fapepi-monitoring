@@ -1,8 +1,8 @@
 {
-  "name": "angular-phonecat",
-  "description": "A starter project for AngularJS",
+  "name": "fapepi-monitoring",
+  "description": "A place to exhibit the report of projects supported by FAPEPI (Piauí research support foundation)",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-phonecat",
+  "homepage": "https://github.com/camilaavilarinho/fapepi-monitoring.git",
   "license": "MIT",
   "private": true,
   "dependencies": {
