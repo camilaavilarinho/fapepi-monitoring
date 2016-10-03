@@ -1,6 +1,6 @@
 'use strict';
 
-// Register `phoneDetail` component, along with its associated controller and template
+// Register `pageMap` component, along with its associated controller and template
 angular.
   module('pageMap').
   component('pageMap', {

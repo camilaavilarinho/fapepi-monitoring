@@ -40,6 +40,18 @@
      .city:hover{
         fill: #2980b9;
      }
+
+     .info_panel {
+       background-color: rgba(255,255,255, .7);
+       padding: .3em;
+       font-size: .8em;
+       font-family: Helvetica, Arial, sans-serif;
+       position: absolute;
+     }
+
+     .info_panel::first-line {
+      font-weight: bold;
+     }
    </style>
 
    <script type="text/ecmascript">
