@@ -11,7 +11,7 @@ angular.
           template: '<short-page></short-page>'
         }).
         when('/:dataId/bolsas', {
-          template: '<page-scholarship></page-scholarship>'
+          template: '<div ng-controller="Controller"><bars-chart chart-data="myData"></bars-chart></div>'
         }).
         when('/:dataId/pesquisas', {
           template: '<page-research></page-research>'
