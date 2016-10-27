@@ -9,7 +9,7 @@ angular.
       {name: "Greg", score: 98},
       {name: "Ari", score: 96},
       {name: 'Q', score: 75},
-      {name: "Loser", score: 48}
+      {name: "Loser", score: 18}
     ];
   }])
   .directive('barsChart', function($parse) {
@@ -32,14 +32,6 @@ angular.
         window.onresize = function() {
           scope.$apply();
         };
-
-        // hard-code data
-        /*scope.data = [
-          {name: "Greg", score: 98},
-          {name: "Ari", score: 96},
-          {name: 'Q', score: 75},
-          {name: "Loser", score: 48}
-        ];*/
 
         // Watch for resize event
         scope.$watch(function() {
@@ -71,9 +63,16 @@ angular.
           // set the height based on the calculations above
           svg.attr('height', height);
 
-          //create the rectangles for the bar chart
-          svg.selectAll('rect')
+          //create a g element
+          svg.selectAll('svg')
           .data(data).enter()
+          .append('g')
+          .attr('height', barHeight)
+          .attr('width', 140);
+
+          //create the rectangles for the bar chart
+          svg.selectAll('g')
+          //.data(data).enter()
           .append('rect')
           .attr('height', barHeight)
           .attr('width', 140)
@@ -87,14 +86,15 @@ angular.
           .attr('width', function(d) {
             return xScale(d.score);
           });
-          svg.selectAll('rect')
+          //create a text element
+          svg.selectAll('g')
           .append('text')
           .attr('x', Math.round(margin/2))
           .attr('y', function(d,i) {
             return i * (barHeight + barPadding);
           })
-          .attr("transform", "rotate(30 20,40)")
-          .attr("font-size", "20px")
+          .attr("font-size", "15px")
+          //.attr("text-anchor", "middle")
           .attr("fill", "red")
           .text(function(d) { return d.name + " " + d.score });
         }
