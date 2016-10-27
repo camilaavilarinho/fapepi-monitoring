@@ -78,7 +78,7 @@ angular.
           .attr('width', 140)
           .attr('x', Math.round(margin/2))
           .attr('y', function(d,i) {
-            return i * (barHeight + barPadding);
+            return i * (barHeight + barPadding) + 10;
           })
           .attr('fill', function(d) { return color(d.score); })
           .transition().ease("elastic")
@@ -91,12 +91,12 @@ angular.
           .append('text')
           .attr('x', Math.round(margin/2))
           .attr('y', function(d,i) {
-            return i * (barHeight + barPadding);
+            return i * (barHeight + barPadding) + 25;
           })
           .attr("font-size", "15px")
           //.attr("text-anchor", "middle")
-          .attr("fill", "red")
-          .text(function(d) { return d.name + " " + d.score });
+          .attr("fill", "#ddd")
+          .text(function(d) { return d.name + " (" + d.score + ")"});
         }
 
       }
