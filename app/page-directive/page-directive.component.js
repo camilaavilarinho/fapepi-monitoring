@@ -63,6 +63,10 @@ angular.
           // set the height based on the calculations above
           svg.attr('height', height);
 
+          svg.append('text')
+          .attr("class", "title")
+          .text("Why Are We Leaving Facebook?");
+
           //create a g element
           svg.selectAll('svg')
           .data(data).enter()
