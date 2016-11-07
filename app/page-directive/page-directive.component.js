@@ -40,12 +40,23 @@ angular.
         .orient("left")
         .ticks(8, "");
 
+        //Obs
+        var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+          return "<strong>Quantidade:</strong> <span style='color:red'>" + d.score + "</span>";
+        })
+
         var svg = d3.select(element[0])
           .append('svg')
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        svg.call(tip);
+
 
         // Browser onresize event
         window.onresize = function() {
@@ -94,7 +105,9 @@ angular.
           .attr("x", function(d) { return x(d.name); })
           .attr("width", x.rangeBand())
           .attr("y", function(d) { return y(d.score); })
-          .attr("height", function(d) { return height - y(d.score); });
+          .attr("height", function(d) { return height - y(d.score); })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide);
 
 
           /*var width = d3.select(element[0]).node().offsetWidth - margin,
