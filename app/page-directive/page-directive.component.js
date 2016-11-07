@@ -8,8 +8,9 @@ angular.
     $scope.myData = [
       {name: "Greg", score: 98},
       {name: "Ari", score: 96},
-      {name: 'Q', score: 75},
-      {name: "Loser", score: 18}
+      {name: 'Alguem', score: 75},
+      {name: "Loser", score: 18},
+      {name: "Camila", score: 28}
     ];
   }])
   .directive('barsChart', function($parse) {
@@ -20,13 +21,31 @@ angular.
       scope: {data: '=chartData'},
       link: function (scope, element, attrs) {
 
-        var margin = parseInt(attrs.margin) || 20,
-          barHeight = parseInt(attrs.barHeight) || 20,
-          barPadding = parseInt(attrs.barPadding) || 5;
+        var margin = {top: 80, right: 180, bottom: 80, left: 180},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1, .3);
+
+        var y = d3.scale.linear()
+        .range([height, 0]);
+
+        var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+        var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(8, "");
 
         var svg = d3.select(element[0])
           .append('svg')
-          .style('width', '100%');
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         // Browser onresize event
         window.onresize = function() {
@@ -48,7 +67,37 @@ angular.
           if (!data) return;
 
           // setup variables
-          var width = d3.select(element[0]).node().offsetWidth - margin,
+          x.domain(data.map(function(d) { return d.name; }));
+          y.domain([0, d3.max(data, function(d) { return d.score; })]);
+
+          svg.append("text")
+          .attr("class", "title")
+          .attr("x", 180)
+          .attr("y", -26)
+          .text("Bolsas de Mestrado");
+
+          svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+          .selectAll(".tick text")
+          .call(function(d) { return d.name; }, x.rangeBand());
+
+          svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis);
+
+          svg.selectAll(".bar")
+          .data(data)
+          .enter().append("rect")
+          .attr("class", "bar")
+          .attr("x", function(d) { return x(d.name); })
+          .attr("width", x.rangeBand())
+          .attr("y", function(d) { return y(d.score); })
+          .attr("height", function(d) { return height - y(d.score); });
+
+
+          /*var width = d3.select(element[0]).node().offsetWidth - margin,
           // calculate the height
           height = scope.data.length * (barHeight + barPadding),
           // Use the category20() scale function for multicolor support
@@ -101,6 +150,7 @@ angular.
           //.attr("text-anchor", "middle")
           .attr("fill", "#ddd")
           .text(function(d) { return d.name + " (" + d.score + ")"});
+          */
         }
 
       }
