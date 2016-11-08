@@ -4,9 +4,7 @@
 </section>
 <h2>{{year.scholarship.name}}</h2>
 <section class="content-sch">
-  <div ng-repeat="data in year.scholarship" class="data-sch">
-    <h4>{{data.name}}: <span>{{data.value |currency:"R$"}}</span></h4>
-  </div>
+  <div ng-controller="Controller"><div bars-chart chart-data="myData"></div></div>
 </section>
 <footer>
   <span>Fonte: Relatório de gestão {{year.id}}</span>
