@@ -4,7 +4,21 @@
 </section>
 <h2>{{year.scholarship.name}}</h2>
 <section class="content-sch">
-  <div ng-controller="Controller"><div bars-chart chart-data="myData"></div></div>
+  <div class="row" ng-controller="Controller">
+    <div class="col-md-6">
+      <div bars-chart data="year.data"></div>
+    </div>
+    <div class="col-md-6">
+      <div bars-chart data="year.mest"></div>
+    </div>
+
+  <!--</div>
+  <div ng-controller="Controller">
+    <div bars-chart data="year.data"></div>
+  </div>
+  <div ng-controller="Controller">
+    <div bars-chart data="year.mest"></div>
+  </div>-->
 </section>
 <footer>
   <span>Fonte: Relatório de gestão {{year.id}}</span>

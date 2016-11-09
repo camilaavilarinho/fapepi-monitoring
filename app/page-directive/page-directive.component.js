@@ -4,21 +4,20 @@
 angular.
   module('testDirective', [])
   .controller('Controller', ['$scope', function($scope) {
-    /*$scope.myData = [10,20,30,40,60, 80, 20, 50];*/
-    $scope.myData = [
+    /*$scope.data = [
       {name: "Greg", score: 98},
       {name: "Ari", score: 96},
       {name: 'Alguem', score: 75},
       {name: "Loser fhajshdkfhasjdhfkjashd hhjfghsdfhja shjfas", score: 18},
       {name: "Camila", score: 28}
-    ];
+    ];*/
   }])
   .directive('barsChart', function($parse) {
     var directiveDefinitionObject = {
 
       restrict: 'EA',
 
-      scope: {data: '=chartData'},
+      scope: {data: '='},
       link: function (scope, element, attrs) {
 
         var margin = {top: 80, right: 180, bottom: 80, left: 180},
@@ -50,10 +49,10 @@ angular.
 
         var svg = d3.select(element[0])
           .append('svg')
-          .attr("width", width + margin.left + margin.right)
+          .attr("width", "100%")
           .attr("height", height + margin.top + margin.bottom)
           .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+          .attr("transform", "translate( 30," + margin.top + ")");
 
         svg.call(tip);
 
@@ -64,11 +63,14 @@ angular.
         };
 
         // Watch for resize event
-        scope.$watch(function() {
+        /*scope.$watch(function() {
           return angular.element(window)[0].innerWidth;
         }, function() {
           scope.render(scope.data);
-        });
+        });*/
+        scope.$watch('data', function(newVals, oldVals) {
+          return scope.render(newVals);
+        }, true);
 
         scope.render = function(data) {
           // remove all previous items before render
