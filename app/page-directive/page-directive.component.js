@@ -4,13 +4,13 @@
 angular.
   module('testDirective', [])
   .controller('Controller', ['$scope', function($scope) {
-    /*$scope.data = [
+    $scope.chartData = [
       {name: "Greg", score: 98},
       {name: "Ari", score: 96},
       {name: 'Alguem', score: 75},
-      {name: "Loser fhajshdkfhasjdhfkjashd hhjfghsdfhja shjfas", score: 18},
+      {name: "Teste", score: 18},
       {name: "Camila", score: 28}
-    ];*/
+    ];
   }])
   .directive('barsChart', function($parse) {
     var directiveDefinitionObject = {
@@ -44,7 +44,7 @@ angular.
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-          return "<strong>Quantidade:</strong> <span style='color:red'>" + d.score + "</span>";
+          return "<strong>"+d.name +":</strong> <span style='color:red'>" + d.score + "</span>";
         })
 
         var svg = d3.select(element[0])
@@ -63,11 +63,12 @@ angular.
         };
 
         // Watch for resize event
-        /*scope.$watch(function() {
+        scope.$watch(function() {
           return angular.element(window)[0].innerWidth;
         }, function() {
           scope.render(scope.data);
-        });*/
+        });
+
         scope.$watch('data', function(newVals, oldVals) {
           return scope.render(newVals);
         }, true);
@@ -91,9 +92,11 @@ angular.
 
           svg.append("g")
           .attr("class", "x axis")
-          .attr("transform", "translate(0," + height + ")")
+          .attr("transform", "translate(0," + (height+30) + ")")
           .call(xAxis)
           .selectAll(".tick text")
+          .attr("transform", "translate(0,10)")
+          .attr("transform", "rotate(-55)")
           .call(wrap, x.rangeBand());
 
           svg.append("g")
@@ -114,7 +117,7 @@ angular.
         }
         //Deal with long labels
         function wrap(text, width) {
-          text.each(function() {
+          /*text.each(function() {
             var text = d3.select(this),
             words = text.text().split(/\s+/).reverse(),
             word,
@@ -134,7 +137,7 @@ angular.
                 tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
               }
             }
-          });
+          });*/
         }
 
       }

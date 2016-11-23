@@ -1,41 +1,35 @@
 {
-  "id": "2011",
-  "scholarship": [
-    {
-      "name": "Apoio a inicialização cientifica Junior ",
-      "value": 128833.64
-
-    }, {
-      "name": "Concessão de Bolsas",
-      "value": 36000.00
-    }, {
-      "name": "Concessão de bolsas de mestrado e Doutorado",
-      "value": 545400.00
-    }
+  "id": 2011,
+  "mestrado":[
+    {"name": "Agronomia", "score": 5},
+    {"name": "Ciêcia da Computação", "score": 7},
+    {"name": "Antropologia", "score": 3},
+    {"name": "Genética e Melhoramento", "score": 5},
+    {"name": "Zootecnia", "score": 5},
+    {"name": "Geografia", "score": 5},
+    {"name": "Saúde da Família", "score": 4},
+    {"name": "História do Brasil", "score": 3},
+    {"name": "Desenvolvimento e Meio Ambiente", "score": 5},
+    {"name": "Ciência dos Materiais", "score": 7},
+    {"name": "Agronomia-Fitotecnia", "score": 7},
+    {"name": "Letras Literatura", "score": 5},
+    {"name": "Solos e Nutrição das Plantas", "score": 5},
+    {"name": "Ética e Epistemologia", "score": 3},
+    {"name": "Arqueologia", "score": 5},
+    {"name": "Ciencia Animal", "score": 2},
+    {"name": "Biotecnologia", "score": 7},
+    {"name": "Odontologia", "score": 5},
+    {"name": "Matemática", "score": 4},
+    {"name": "Comunicação", "score": 5},
+    {"name": "Farmacologia", "score": 4},
+    {"name": "Ciências Farmacêuticas", "score": 4},
+    {"name": "Física", "score": 5},
+    {"name": "Ciências de Materiais", "score": 7},
+    {"name": "Letras ", "score": 3},
+    {"name": "Química", "score": 7}
   ],
-  "research": [
-    {
-      "name": "Pesquisa para o SUS",
-      "value": 12196.46
-    }, {
-      "name": "Fomento a pesquisa Cientifica e tecnológica",
-      "value": 814957.89
-    }, {
-      "name": "Programa de desenvolvimento cientifico regional",
-      "value": 15000.00
-    }
-  ],
-  "events": [
-    {
-      "name": "Auxilio financeiro a Eventos",
-      "value": 19750.00
-    }
-  ],
-  "data":[
-    {"name": "Greg", "score": 98},
-    {"name": "Ari", "score": 96},
-    {"name": "Alguem", "score": 75},
-    {"name": "Loser fhajshdkfhasjdhfkjashd hhjfghsdfhja shjfas", "score": 18},
-    {"name": "Camila", "score": 28}
+  "doutorado":[
+    {"name": "Ciência Animal", "score": 10},
+    {"name": "Biotecnologia/Renorbio", "score": 20}
   ]
 }

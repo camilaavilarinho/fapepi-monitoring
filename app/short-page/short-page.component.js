@@ -20,7 +20,7 @@ angular.
       };
       self.calculateValue = function(data){
         var total = 0;
-        console.log(data);
+        //console.log(data);
         for(var i = 0 ; i < data.length; i++){
           total+= data[i].value;
         }
