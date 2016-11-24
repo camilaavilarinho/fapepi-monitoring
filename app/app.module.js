@@ -7,5 +7,6 @@ angular.module('observatoryApp', [
   'pageResearch',
   'pageEvents',
   'shortPage',
+  'nvd3',
   'testDirective',
 ]);

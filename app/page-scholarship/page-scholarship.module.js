@@ -2,5 +2,5 @@
 
 // Define the `phoneDetail` module
 angular.module('pageScholarship', [
-  'ngRoute'
+  'ngRoute', 'nvd3'
 ]);

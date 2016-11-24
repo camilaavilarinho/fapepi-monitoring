@@ -2,27 +2,11 @@
 <section class="title-sch">
   <h1>Bolsas {{year.id}}</h1>
 </section>
-<select class="year form-control" ng-model="dado" ng-change="change(dado)">
-  <option value="mestrado">Mestrado</option>
-  <option value="doutorado">Doutorado</option>
-</select>
-<!--<div class="buttons">
-  <button type="button" class="btn btn-primary" ng-model="dado" ng-click="change('mestrado')">Mestrado</button>
-  <button type="button" class="btn btn-primary" ng-model="dado" ng-click="change('doutorado')">Doutorado</button>
-</div>-->
-<h2>{{year.scholarship.name}}</h2>
+
+<select ng-init="selectedChart.chart = chartOptions[0]; updateChart()" ng-model="selectedChart.chart" ng-change="updateChart()" ng-options="c.name for c in chartOptions track by c.id"></select>
+
 <section class="content-sch">
-  <div class="row" >
-    <div class="col-md-6">
-      {{dado}}
-      <!--<div ng-controller="Controller">-->
-        <div bars-chart data="chartData" ></div>
-      <!--</div>-->
-
-    </div>
-    <div class="col-md-6">
-
-    </div>
+  <nvd3 options='options' data='data'></nvd3>
 </section>
 <footer>
   <span>Fonte: Relatório de gestão {{year.id}}</span>
