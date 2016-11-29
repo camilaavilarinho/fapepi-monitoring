@@ -10,18 +10,6 @@ angular.
         when('/home', {
           template: '<short-page></short-page>'
         }).
-        when('/:dataId/bolsas', {
-          template: '<page-scholarship></page-scholarship>'
-        }).
-        when('/:dataId/pesquisas', {
-          template: '<page-research></page-research>'
-        }).
-        when('/:dataId/eventos', {
-          template: '<page-events></page-events>'
-        }).
-        when('/:dataId/instituicoes', {
-          template: '<page-instituition></page-instituition>'
-        }).
         otherwise('/home');
     }
   ]);
