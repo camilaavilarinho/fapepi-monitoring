@@ -29,13 +29,16 @@ angular.
           scope.render(scope.data);
         });
 
+        scope.$watch('data', function(newVals, oldVals) {
+          return scope.render(newVals);
+        }, true);
+
 
         scope.render = function(data) {
-
           // remove all previous items before render
           svg.selectAll('*').remove();
           // If we don't pass any data, return out of the element
-          console.log("Chegou aqui!!!"+data);
+          console.log("Chegou aqui!!!"+ data);
           if (!data) return;
 
           // setup variables
