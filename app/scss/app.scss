@@ -222,3 +222,28 @@ footer{
   top: 100%;
   left: 0;
 }
+
+/*  Colocando a directive que desenha o mapa*/
+.subunit{
+  fill: gray;
+  stroke: white;
+  stroke-linejoin: round;
+}
+#map svg{
+  width: 660px;
+  height: 800px;
+}
+.subunit:hover {
+  opacity: 1;
+  stroke-width: 2px;
+  stroke: #111;
+  fill: #9ECAE1;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
