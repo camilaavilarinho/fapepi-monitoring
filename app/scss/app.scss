@@ -223,7 +223,7 @@ footer{
   left: 0;
 }
 
-/*  Colocando a directive que desenha o mapa*/
+/*  Creating the  directive that draw the map*/
 .subunit{
   fill: gray;
   stroke: white;
@@ -246,4 +246,12 @@ svg{
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 2px;
+}
+/*  Home page style  */
+.intro{
+  margin: 30px;
+  border-radius: 10px;
+  background-color: $background;
+  width: 100%;
+  height: 150px;
 }

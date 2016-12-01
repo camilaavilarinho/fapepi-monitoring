@@ -71,9 +71,17 @@ angular.
           .enter().append("path")
           .attr("class", function(d) { return "subunit " + d.id; })
           .attr("d", path)
-          .on('mouseover', tip.show)
-          .on('mouseout', tip.hide);
+          .on('mouseover', mouseover)
+          .on('mouseout', mouseout);
 
+        }
+
+        function mouseover(d){
+          d3.select("#infoname").text(d.id);
+        }
+
+        function mouseout(d){
+          d3.select("#infoname").text("");
         }
 
       }
