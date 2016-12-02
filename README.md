@@ -13,4 +13,4 @@ Initially only the report data from 2011 to 2016 will be displayed, in a second 
 * HTML
 * CSS
 
-Demo [here](http://camilavilarinho.com.br/observatorio-fapepi/app/#!/home)
+Demo [here](http://camilavilarinho.com.br/teste-observatorio/)
